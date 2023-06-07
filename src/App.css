@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+/* BASE STYLES */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Buttons */
+button{
+  padding: 1rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  transition: .4s;
+  background-color: blueviolet;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a{
+  color: white;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover{
+  box-shadow: 0 0 1rem 1px rgba(255, 255, 255, 0.18);
+}
+
+/* HEADER SECTION */
+.header{
+  background-color: rgb(84, 18, 122);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  height: 6rem;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items{
+  margin: .2rem 1.5rem;
+  cursor: pointer;
+}
+
+/* MAIN SECTION */
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.text-section h3{
+  font-weight: 600;
+  margin-bottom: .6rem;
+}
+
+.text-section p{
+  margin-top: 1rem;
+}
+
+.preview-text{
+  margin-top: 1rem;
+}
+
+.text-section button{
+  margin-top: 1rem;
+  background-color: rgba(60, 0, 128, 0.739);
+  color: white;
+}
+
+.text-section button:hover{
+  background-color: rgba(60, 0, 128, 0.854);
+}
+
+textarea{
+  font-size: 1rem;
+  padding: .5rem;
+}
+
+.func-btn{
+  margin: .8rem .5rem;
+}
+.preview-text-content{
+  width: 74rem;
+  word-wrap: break-word;
 }
